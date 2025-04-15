@@ -1,3 +1,16 @@
+*{
+    padding: none;
+    margin: none;
+}
+
+
+menu {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+ }
+
 .containerr{
     display: grid;
     grid-template-areas: 
@@ -7,60 +20,145 @@
     ;
     grid-template-columns: 1fr 3fr;
     gap: 5px;
+    background-color: #8E1916;
 }
 
-.containerr > div {
-    background-color: blanchedalmond;
+.containerr > header,menu,footer,main,div {
+    background-color: white;
 }
 
-.containerr > div.header{
+.header{
     grid-area: header;
     height: 10vh;
     display: flex;
     align-items: center;
 }
 
-.containerr > div.content{
+.content{
     grid-area: content;
-    height: 75vh;
+    max-height: 73vh;
+    overflow-y: scroll;
+
 }
 
-.containerr > div.menu{
+.menu{
     grid-area: menu;
-    height: 75vh;
+    height: 73vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 50px;
     align-items: center;
     padding: 40px 0px 40px 0px;
 }
 
-div.menu > a {
+.menu > li > a {
     display: block;
+    color: black;
+    text-decoration: none;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 
-div.menu > a:visited{
+.menu > a:visited{
     text-decoration: none;
     font-size: large    ;
 
 }
 
-.containerr > div.footer{
+.menu > li > a:hover{
+    box-shadow: inset 200px 0 0 0 black;
+    color: white;
+}
+
+.footer{
     grid-area: footer;
-    height: 13vh;
+    height: 15.5vh;
 }
 
-*{
-    padding: none;
-    margin: none;
-}
 
-html{
-    padding: none;
-    margin:none;
-}
 
 .clicked_menu_item{
     text-decoration: none;
     font-size: 25px;
+}
+
+.home-page-photo-container, .universty-page-photo-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+}
+
+.home-page-photo-container img,.universty-page-photo-container  img{
+    width: 65%;
+    transition: transform 0.4s ease;
+    transform-origin: center center;
+    cursor: pointer;
+}
+
+.home-page-photo-container  img:hover{
+    transform: scale(1.2);
+}
+
+.universty-page-photo-container img:hover{
+    transition: 0.4s;
+    opacity: 0.7;
+}
+
+
+.content-container{
+    width: 65%;
+    margin: auto;
+    margin-bottom: 5rem;
+    margin-top: 50px;
+}
+
+.announcements-list{
+    padding-inline-start: 0px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.video-container,.form-container{
+    display: grid;
+    place-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+.dropdownhover{
+    padding-inline-start: 10px;
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    margin-top: 5px;
+}
+
+.dropdownhover li{
+    position: relative;
+}
+
+.dropdownhover a{
+    text-decoration: none;
+    color: black;
+
+}
+
+.dropdownhover a:hover{
+    text-decoration: underline;
+    color: blueviolet;
+}
+
+#students:hover .dropdownhover{
+    display:flex;
+
+
+}
+
+.footer{
+    display: grid;
+    align-items: center;
+    justify-content: center;
 }

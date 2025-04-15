@@ -1,34 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Academics</title>
+        <title>Estu - Academics</title>
         <meta charset="UTF-8">
-        <meta name="description" content="This a Eskişehir Technical Universty academics webpage. You can find academic announcements on this page.">
-        <meta name="keywords" content="estu, estu academic, eskisehir technical universty">
+        <meta
+            name="description"
+            content="This a Eskişehir Technical Universty academics webpage. You can find academic announcements on this page.">
+        <meta
+            name="keywords"
+            content="estu, estu academic, eskisehir technical universty">
         <meta name="author" content="Mehmet Fatih Durna">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/png" href="img/favicon-estu.png">
         <link rel="stylesheet" href="css/style.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous">
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
     </head>
 
-    <body>
-        <div class="containerr">
-            <div class="header">
-                <img src="img/estu_logo_vektorel.svg" height="65" alt="estu_logo">
-            </div>
-            <div class="menu">
+    <body class="containerr">
+        <header class="header">
+            <img src="img/estu_logo_vektorel.svg" height="65" alt="estu_logo">
+        </header>
+        <menu class="menu">
+            <li>
                 <a href="home.html">HOME</a>
+            </li>
+            <li>
                 <a href="universty.html">UNIVERSTY</a>
+            </li>
+            <li>
                 <a class="clicked_menu_item" href="academics.html">ACADEMICS</a>
-                <a href="students.html">STUDENTS</a>
+            </li>
+            <li id="students">
+              <a href="students.html">STUDENTS <span style="padding: 0px 5px 0px 5px; border: 1px black solid; display: inline-block;border-radius: 20%;">↓</span></a>
+              <ul style="list-style: none;" class="dropdownhover">
+                  <li>
+                      <a href="documents.html">Documents</a>
+                  </li>
+                  <li>
+                      <a href="login.html">Login</a>
+                  </li>
+              </ul>
+          </li>
+            <li>
                 <a href="campuslife.html">CAMPUSLIFE</a>
+            </li>
+            <li>
                 <a href="login.html">LOGIN</a>
+            </li>
+            <li>
                 <a href="documents.html">DOCUMENTS</a>
+            </li>
+        </menu>
+        <main class="content">
+            <div class="content-container">
+                <h1>Faculties</h1>
+                <table class="table table-striped">
+                    <thead class="table-dark">
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Faculties</th>
+                        <th scope="col">Information</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Faculty of Computer and Information Sciences</td>
+                        <td>The Faculty of Computer and Information Sciences was established by Presidential Decree No. 8785, published in the Resmî Gazete dated August 2, 2024 and numbered 32620.</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Faculty of Science</td>
+                        <td>All departments are accredited by FEDEK for a second 5-year period until September 30, 2023. The faculty became part of Eskişehir Technical University through Law No. 7141 published in the Resmî Gazete dated May 18, 2018 and numbered 30425.</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Faculty of Aeronautics and Astronautics</td>
+                        <td>Since its establishment, our faculty carried out its educational activities under Anadolu University. It was incorporated into Eskişehir Technical University through Law No. 7141, published in the Resmî Gazete dated May 18, 2018.</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">4</th>
+                        <td>Faculty of Architecture and Design</td>
+                        <td>The Faculty of Architecture and Design, which was established by the Council of Ministers’ decision No. 2011/2471 on November 14, 2011, was incorporated into the Rectorate of Eskişehir Technical University by the Law on Amendments to the Higher Education Law and Certain Laws and Decree Laws, published in the Resmî Gazete on May 18, 2018, and has since continued its educational activities under Eskişehir Technical University.</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">5</th>
+                        <td>Faculty of Engineering</td>
+                        <td>The faculty resumed its educational activities in the 1994–1995 academic year with three departments and continued its operations in various buildings at the Yunus Emre Campus until 1998. Since October 1998, it has been operating in its own buildings at the Two Eylul Campus. In 2012, the Department of Architecture was separated from the faculty and incorporated into the newly established Faculty of Architecture and Design, and the faculty was renamed as the "Faculty of Engineering". The Faculty of Engineering was affiliated with Eskişehir Technical University, which was established by Law No. 7141 published in the Resmî Gazete dated May 18, 2018 and numbered 30425.</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">6</th>
+                        <td>Faculty of Sports Sciences</td>
+                        <td>The Faculty of Sports Sciences at Eskişehir Technical University was established through the transformation of the School of Physical Education and Sports, which had originally been founded by Decree Law No. 496 dated August 18, 1993, and was later closed and converted by the Council of Ministers Decision (2013/5074) published in the Resmî Gazete on July 24, 2013. The faculty became part of Eskişehir Technical University through Law No. 7141, published in the Resmî Gazete dated May 18, 2018.</td>
+                      </tr>
+                    </tbody>
+                </table>
+
+                <h1>Enstitues</h1>
+                <table class="table table-striped">
+                    <thead class="table-dark">
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Enstitues</th>
+                        <th scope="col">Information</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Graduate Education Institute</td>
+                        <td>The Graduate School of Education, affiliated with Eskişehir Technical University which was established by Law No. 7141 published in the Resmî Gazete dated May 18, 2018 and numbered 30425, was founded by Presidential Decree No. 967 published in the Resmî Gazete dated April 18, 2019 and numbered 30749, and began its educational activities in the Spring Semester of the 2018–2019 academic year.</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Institute of Transportation Sciences</td>
+                        <td>The Transportation Economics Research Institute was established in 1993 under Anadolu University by Decree Law No. 496, reporting directly to the Rectorate. The institute's name was changed to the “Institute of Transportation Sciences” by a decision of the Council of Ministers on October 4, 2012, and this change came into effect upon its publication in the Resmî Gazete dated November 2, 2012 and numbered 28455. The Institute of Transportation Sciences is the first and only institute in its field.</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Institute of Earth and Space Sciences</td>
+                        <td>Established by Law No. 7141 published in the Resmî Gazete dated May 18, 2018 and numbered 30425, the Institute of Earth and Space Sciences at Eskişehir Technical University conducts activities in three departments, focusing primarily on research and development (R&D), as well as education and contributions to societal benefit.</td>
+                      </tr>
+                    </tbody>
+                </table>
+
+                <h1>Vocational Higher Schools</h1>
+                <table class="table table-striped">
+                    <thead class="table-dark">
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Vocational School of Information Technologies</td>
+                        <td>Eskişehir Technical University (ESTU) Vocational School of Information Technologies was established to meet the needs of the rapidly developing information technology sector. The school aims to train qualified professionals in the field of IT, provide education tailored to industry demands, and contribute to regional development. In today’s fast-evolving technological landscape, it focuses on critical areas such as software development, cybersecurity, artificial intelligence, and data analytics, aiming to equip students with both theoretical and practical knowledge. Through this approach, the school seeks to graduate individuals who are well-prepared to swiftly integrate into the professional world.</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Porsuk Vocational School</td>
+                        <td>The Transportation Economics Research Institute was established in 1993 under Anadolu University by Decree Law No. 496, affiliated with the Rectorate. The institute’s name was changed to the “Institute of Transportation Sciences” by a decision of the Council of Ministers on October 4, 2012, and this change was enacted upon its publication in the Resmî Gazete dated November 2, 2012 and numbered 28455. The Institute of Transportation Sciences is the first and only institute in its field.</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Vocational School of Transportation</td>
+                        <td>Eskişehir Technical University Vocational School of Transportation began its educational activities in the 2012–2013 academic year by incorporating nine programs. These included: Railway Systems Electrical and Electronics, Railway Systems Management, Railway Systems Mechanical Technology, Railway Systems Machinist Training, Railway Systems Track Technology, Transportation and Traffic Services, and Aircraft Technology programs previously under Anadolu University’s Porsuk Vocational School; as well as Civil Aviation Cabin Services and Logistics programs previously under Anadolu University’s Eskişehir Vocational School.</td>
+                      </tr>
+                    </tbody>
+                </table>
+
+
             </div>
-            <div class="content">ACADEMICS</div>
-            <div class="footer">footer</div>
-        </div>
+        </main>
+        <footer class="footer">
+          <div>
+            <p>Copyright© 2025 Mehmet Fatih Durna</p>
+          </div>
+        </footer>
     </body>
 </html>

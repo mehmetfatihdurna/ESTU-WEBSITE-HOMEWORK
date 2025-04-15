@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Documents</title>
+        <title>Estu - Documents</title>
         <meta charset="UTF-8">
         <meta name="description" content="This a Eskişehir Technical Universty documents webpage. You can find academic announcements on this page.">
         <meta name="keywords" content="estu, estu academic, eskisehir technical universty">
@@ -13,22 +13,94 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </head>
 
-    <body>
-        <div class="containerr">
-            <div class="header">
-                <img src="img/estu_logo_vektorel.svg" height="65" alt="estu_logo">
-            </div>
-            <div class="menu">
+    <body class="containerr">
+        
+        <header class="header">
+            <img src="img/estu_logo_vektorel.svg" height="65" alt="estu_logo">
+        </header>
+        <menu class="menu">
+            <li>
                 <a href="home.html">HOME</a>
+            </li>
+            <li>
                 <a href="universty.html">UNIVERSTY</a>
+            </li>
+            <li>
                 <a href="academics.html">ACADEMICS</a>
-                <a href="students.html">STUDENTS</a>
+            </li>
+            <li id="students">
+              <a href="students.html">STUDENTS <span style="padding: 0px 5px 0px 5px; border: 1px black solid; display: inline-block;border-radius: 20%;">↓</span></a>
+              <ul style="list-style: none;" class="dropdownhover">
+                  <li>
+                      <a href="documents.html">Documents</a>
+                  </li>
+                  <li>
+                      <a href="login.html">Login</a>
+                  </li>
+              </ul>
+          </li>
+            <li>
                 <a href="campuslife.html">CAMPUSLIFE</a>
+            </li>
+            <li>
                 <a href="login.html">LOGIN</a>
+            </li>
+            <li>
                 <a class="clicked_menu_item" href="documents.html">DOCUMENTS</a>
-            </div>
-            <div class="content">DOCUMENTS</div>
-            <div class="footer">footer</div>
+            </li>
+        </menu>
+        <main class="content">
+          <div class="content-container">
+            <h1>Documents</h1>
+            <ul class="announcements-list"> 
+                <li>
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Academic Calendar</h5>
+                      <p class="card-text">Eskişehir Technical University 2024–2025 academic calendar</p>
+                      <a href="downloads/akademik_takvim_2025.pdf" class="btn btn-primary" download>Download</a>
+                    </div>
+                  </div>
+                </li>
+              
+                <li>
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">YDYO Academic Calendar</h5>
+                      <p class="card-text">School of Foreign Languages 2024–2025 academic calendar</p>
+                      <a href="downloads/ydyo_akademik_takvim.pdf" class="btn btn-primary" download>Download</a>
+                    </div>
+                  </div>
+                </li>
+              
+                <li>
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Part-Time Student Recruitment Announcement</h5>
+                      <p class="card-text">Part-time student recruitment announcement by the Department of Information Technologies</p>
+                      <a href="downloads/kismi_zamanli_ogrenci_alim_ilani.pdf" class="btn btn-primary" download>Download</a>
+                    </div>
+                  </div>
+                </li>
+        
+                <li>
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Application Form</h5>
+                        <p class="card-text">Application form for the part-time student recruitment announcement by the Department of Information Technologies.</p>
+                        <a href="downloads/basvuru_formu.docx" class="btn btn-primary" download>Download</a>
+                      </div>
+                    </div>
+                  </li>
+            </ul>
         </div>
-    </body>
+        
+        </main>
+        <footer class="footer">
+          <div>
+            <p>Copyright© 2025 Mehmet Fatih Durna</p>
+          </div>
+        </footer>
+    
+</body>
 </html>

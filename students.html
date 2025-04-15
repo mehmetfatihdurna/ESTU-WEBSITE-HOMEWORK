@@ -1,29 +1,132 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Students</title>
+        <title>Estu - Students</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="This a Eskişehir Technical Universty home page. You can find more general information about Estu on this page.">
+        <meta name="keywords" content="estu, estu academic, eskisehir technical universty">
+        <meta name="author" content="Mehmet Fatih Durna">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/png" href="img/favicon-estu.png">
         <link rel="stylesheet" href="css/style.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </head>
 
-    <body>
-        <div class="containerr">
-            <div class="header">
-                <img src="img/estu_logo_vektorel.svg" height="65" alt="estu_logo">
-            </div>
-            <div class="menu">
+    <body class="containerr">
+
+        <header class="header">
+            <img src="img/estu_logo_vektorel.svg" height="65" alt="estu_logo">
+        </header>
+
+        <menu class="menu">
+            <li>
                 <a href="home.html">HOME</a>
-                <a href="universty.html">UNIVERSTY</a>
+            </li>
+            <li>
+                <a  href="universty.html">UNIVERSTY</a>
+            </li>
+            <li>
                 <a href="academics.html">ACADEMICS</a>
-                <a class="clicked_menu_item" href="students.html">STUDENTS</a>
+            </li>
+            <li id="students">
+                <a class="clicked_menu_item" href="students.html">STUDENTS <span style="padding: 0px 5px 0px 5px; border: 1px black solid; display: inline-block;border-radius: 20%;">↓</span></a>
+                <ul style="list-style: none;" class="dropdownhover">
+                    <li>
+                        <a href="documents.html">Documents</a>
+                    </li>
+                    <li>
+                        <a href="login.html">Login</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
                 <a href="campuslife.html">CAMPUSLIFE</a>
+            </li>
+            <li>
                 <a href="login.html">LOGIN</a>
+            </li>
+            <li>
                 <a href="documents.html">DOCUMENTS</a>
+            </li>
+        </menu>
+
+        <main class="content">
+            <div class="content-container">
+                <h1>Eskisehir Technical University Facilities</h1>
+                <div class="row g-4 mt-4">
+
+                    <div class="col-4 col-sm-12 col-lg-6">
+                      <div class="card h-100">
+                        <img src="img/estu_yemekhane.jpg" class="card-img-top" alt="refactory">
+                        <div class="card-body">
+                          <h5 class="card-title">Dining Services</h5>
+                          <p class="card-text">In order to ensure that our students have access to healthy and high-quality meals, food services are provided at our university's Two Eylul Campus and Porsuk Campus. In addition, social facilities such as canteens, cafeterias, and dining halls also serve our students.</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-4 col-sm-12 col-lg-6">
+                        <div class="card h-100">
+                          <img src="img/library.jpg" class="card-img-top" alt="library photo">
+                          <div class="card-body">
+                            <h5 class="card-title">Library Facilities</h5>
+                            <p class="card-text">With a strong collection of electronic resources, the central library and reading room offer services to students and academics with access to over 130,000 e-books and more than 30,000 printed books. Remote access to the library’s electronic resources is also available.</p>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="col-4 col-sm-12 col-lg-6">
+                        <div class="card h-100">
+                          <img src="img/transportation.jpg" class="card-img-top" alt="a bus photo">
+                          <div class="card-body">
+                            <h5 class="card-title">Transportation</h5>
+                            <p class="card-text">Our campuses are accessible via buses and minibuses departing from various points of the city. Students meet their accommodation needs through KYK dormitories, private dormitories, and apartment residences located in different parts of the city. There is also a KYK dormitory located near the campus.</p>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="col-4 col-sm-12 col-lg-6">
+                        <div class="card h-100">
+                          <img src="img/medicine.jpg" class="card-img-top" alt="a doctor photo">
+                          <div class="card-body">
+                            <h5 class="card-title">Health Services</h5>
+                            <p class="card-text">Both our students and staff can benefit from the University’s Family Health Center. Currently, two outpatient clinics are actively operating, providing services such as medical examinations, prescription issuance, injections, wound care, and blood tests.</p>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="col-4 col-sm-12 col-lg-6">
+                        <div class="card h-100">
+                          <img src="img/pshilogical_service.jpg" class="card-img-top" alt="an illustrator about pshilogical guidance service">
+                          <div class="card-body">
+                            <h5 class="card-title">Psychological Counseling and Guidance Services</h5>
+                            <p class="card-text">The Psychological Counseling and Guidance Unit offers services to support individuals in their social, emotional, and career development areas according to their needs and preferences. The unit also organizes seminars, workshops, and informational meetings.</p>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="col-4 col-sm-12 col-lg-6">
+                        <div class="card h-100">
+                          <img src="img/student_clubs.jpg" class="card-img-top" alt="student clubs photo">
+                          <div class="card-body">
+                            <h5 class="card-title">Student Clubs</h5>
+                            <p class="card-text">Our university’s student clubs are here to help students develop individual talents, gain teamwork skills, and meet their social and cultural needs. The university supports students both in joining existing clubs and in establishing their own.</p>
+                          </div>
+                        </div>
+                    </div>
+
+
+                
+                </div>
             </div>
-            <div class="content">STUDENTS</div>
-            <div class="footer">footer</div>
-        </div>
+        </main>
+
+        <footer class="footer">
+            <div>
+                <p>Copyright© 2025 Mehmet Fatih Durna</p>
+            </div>
+        </footer>
+
     </body>
 </html>
