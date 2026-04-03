@@ -1,0 +1,25 @@
+{
+  "name": "estu-website",
+  "version": "1.0.0",
+  "description": "Eskişehir Technical University Website - Static HTML site with Vercel Web Analytics integration",
+  "private": true,
+  "scripts": {
+    "start": "echo 'This is a static HTML website. Open index.html in your browser or deploy to Vercel.'",
+    "deploy": "vercel deploy"
+  },
+  "keywords": [
+    "estu",
+    "university",
+    "static-website",
+    "vercel-analytics"
+  ],
+  "author": "Mehmet Fatih Durna",
+  "license": "UNLICENSED",
+  "devDependencies": {},
+  "analytics": {
+    "provider": "vercel",
+    "status": "enabled",
+    "integration": "Static HTML - Script injection method",
+    "notes": "Vercel Web Analytics has been integrated into all HTML pages using the /_vercel/insights/script.js approach. Analytics will automatically track page views when deployed to Vercel."
+  }
+}
